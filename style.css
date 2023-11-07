@@ -1,0 +1,132 @@
+:root {
+    /* PRIMARY */
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark_cyan: hsl(179, 100%, 13%);
+
+    /* NEUTRAL */
+    --white: hsla(0, 0%, 100%, 0.75); /* Paragraphs */
+    --light_gray: hsl(0, 0%, 95%); /* (background, headings, buttons) */
+}
+
+@font-face {
+    font-family: Lexend Deca;
+    src: url("./assets/fonts/LexendDeca-Regular.ttf");
+}
+
+@font-face {
+    font-family: Big Shoulders;
+    src: url("./assets/fonts/BigShouldersDisplay-Bold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lexend Deca;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+    /* width: 70%; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cards .card:nth-child(1) {
+    background-color: var(--orange);
+}
+
+.cards .card:nth-child(1) a {
+    color: var(--orange);
+}
+
+.cards .card:nth-child(2) {
+    background-color: var(--cyan);
+}
+
+.cards .card:nth-child(2) a {
+    color: var(--cyan);
+}
+
+.cards .card:nth-child(3) {
+    background-color: var(--dark_cyan);
+}
+
+.cards .card:nth-child(3) a {
+    color: var(--dark_cyan);
+}
+
+.cards .card a:hover {
+    color: var(--light_gray);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+    width: 100%;
+}
+
+.card h1 {
+    text-transform: uppercase;
+    color: var(--light_gray);
+    font-family: Big Shoulders;
+    font-size: 2.5rem;
+}
+
+.card p {
+    color: var(--white);
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+
+.card a {
+    border: 2px solid var(--light_gray);
+    background: var(--light_gray);
+    padding: 12px 30px;
+    width: fit-content;
+    text-decoration: none;
+    border-radius: 100vmax;
+    margin-top: 3rem;
+    font-size: 15px;
+}
+
+.card a:hover {
+    background: none;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        gap: 2rem;
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cards a {
+        margin-top: auto;
+        padding: 10px 15px;
+    }
+}
