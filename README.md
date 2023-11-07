@@ -36,8 +36,8 @@ Mobile View
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/3-column-preview-card-component-w05elZdtqX)
-- Live Site URL: [Add live site URL here](https://3-column-preview-card-azure.vercel.app/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/3-column-preview-card-component-w05elZdtqX)
+- Live Site URL: [Preview Site](https://3-column-preview-card-azure.vercel.app/)
 
 ## My process
 
